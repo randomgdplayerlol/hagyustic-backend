@@ -1,0 +1,32 @@
+# Environment Variables
+.env
+
+# Node.js Dependencies
+node_modules
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# Build Outputs
+dist/
+build/
+*.cache/
+
+# System Files
+.DS_Store
+Thumbs.db
+
+# IDE/Editor Files
+.vscode/
+.idea/
+*.suo
+*.njsproj
+*.sln
+
+# Firebase Artifacts (Optional)
+.firebase/
+Config/hagyustic-firebase-adminsdk-*.json
