@@ -27,6 +27,15 @@ This is the backend server for the HaGyustic eCommerce web application. It is bu
 - **Email:** Nodemailer (Gmail SMTP)
 - **Environment:** dotenv
 
+##  API Documentation
+
+The full API endpoints with request/response examples via Postman:
+
+[View Postman API Documentation](https://documenter.getpostman.com/view/41735525/2sB2qZG3Fn)
+
+[![Postman Docs](https://img.shields.io/badge/View%20in-Postman-orange?logo=postman)](https://documenter.getpostman.com/view/41735525/2sB2qZG3Fn)
+
+
 ## API Endpoints Overview
 
 ### Auth Routes
